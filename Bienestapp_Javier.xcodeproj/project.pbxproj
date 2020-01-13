@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68025D3E355FFB7C7FDF53B7 /* Pods_Bienestapp_Javier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBDD4FFA29AB2A66E154CB8 /* Pods_Bienestapp_Javier.framework */; };
+		7FB88B4D23C8937800506E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B4C23C8937800506E1F /* AppDelegate.swift */; };
+		7FB88B4F23C8937800506E1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B4E23C8937800506E1F /* LoginViewController.swift */; };
+		7FB88B5223C8937800506E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB88B5023C8937800506E1F /* Main.storyboard */; };
+		7FB88B5423C8937A00506E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB88B5323C8937A00506E1F /* Assets.xcassets */; };
+		7FB88B5723C8937A00506E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB88B5523C8937A00506E1F /* LaunchScreen.storyboard */; };
+		7FB88B5F23C8974100506E1F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B5E23C8974100506E1F /* RegisterViewController.swift */; };
+		7FB88B6123C8976200506E1F /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6023C8976200506E1F /* RecoverPasswordViewController.swift */; };
+		7FB88B6323C897D500506E1F /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6223C897D500506E1F /* AppListViewController.swift */; };
+		7FB88B6523C897FE00506E1F /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6423C897FE00506E1F /* StatsViewController.swift */; };
+		7FB88B6723C8984C00506E1F /* TimerControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6623C8984C00506E1F /* TimerControlViewController.swift */; };
+		7FB88B6923C8987000506E1F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6823C8987000506E1F /* ProfileViewController.swift */; };
+		7FB88B6B23C8989400506E1F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6A23C8989400506E1F /* MapViewController.swift */; };
+		7FB88B6D23C8ADF600506E1F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		189546B78DBC3A0006E71E59 /* Pods-Bienestapp_Javier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestapp_Javier.debug.xcconfig"; path = "Target Support Files/Pods-Bienestapp_Javier/Pods-Bienestapp_Javier.debug.xcconfig"; sourceTree = "<group>"; };
+		4B79FA4740D7E3DE787AAA7C /* Pods-Bienestapp_Javier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestapp_Javier.release.xcconfig"; path = "Target Support Files/Pods-Bienestapp_Javier/Pods-Bienestapp_Javier.release.xcconfig"; sourceTree = "<group>"; };
+		7FB88B4923C8937800506E1F /* Bienestapp_Javier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bienestapp_Javier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB88B4C23C8937800506E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7FB88B4E23C8937800506E1F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7FB88B5123C8937800506E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FB88B5323C8937A00506E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FB88B5623C8937A00506E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FB88B5823C8937A00506E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB88B5E23C8974100506E1F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7FB88B6023C8976200506E1F /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
+		7FB88B6223C897D500506E1F /* AppListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewController.swift; sourceTree = "<group>"; };
+		7FB88B6423C897FE00506E1F /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		7FB88B6623C8984C00506E1F /* TimerControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerControlViewController.swift; sourceTree = "<group>"; };
+		7FB88B6823C8987000506E1F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7FB88B6A23C8989400506E1F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		BDBDD4FFA29AB2A66E154CB8 /* Pods_Bienestapp_Javier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestapp_Javier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FB88B4623C8937800506E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68025D3E355FFB7C7FDF53B7 /* Pods_Bienestapp_Javier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A344089C20147F417AEEBFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDBDD4FFA29AB2A66E154CB8 /* Pods_Bienestapp_Javier.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FB88B4023C8937800506E1F = {
+			isa = PBXGroup;
+			children = (
+				7FB88B4B23C8937800506E1F /* Bienestapp_Javier */,
+				7FB88B4A23C8937800506E1F /* Products */,
+				E774F826A29D4A1E6B749C5D /* Pods */,
+				0A344089C20147F417AEEBFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7FB88B4A23C8937800506E1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FB88B4923C8937800506E1F /* Bienestapp_Javier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FB88B4B23C8937800506E1F /* Bienestapp_Javier */ = {
+			isa = PBXGroup;
+			children = (
+				7FB88B4C23C8937800506E1F /* AppDelegate.swift */,
+				7FB88B4E23C8937800506E1F /* LoginViewController.swift */,
+				7FB88B5E23C8974100506E1F /* RegisterViewController.swift */,
+				7FB88B6023C8976200506E1F /* RecoverPasswordViewController.swift */,
+				7FB88B6223C897D500506E1F /* AppListViewController.swift */,
+				7FB88B6423C897FE00506E1F /* StatsViewController.swift */,
+				7FB88B6623C8984C00506E1F /* TimerControlViewController.swift */,
+				7FB88B6823C8987000506E1F /* ProfileViewController.swift */,
+				7FB88B6A23C8989400506E1F /* MapViewController.swift */,
+				7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */,
+				7FB88B5023C8937800506E1F /* Main.storyboard */,
+				7FB88B5323C8937A00506E1F /* Assets.xcassets */,
+				7FB88B5523C8937A00506E1F /* LaunchScreen.storyboard */,
+				7FB88B5823C8937A00506E1F /* Info.plist */,
+			);
+			path = Bienestapp_Javier;
+			sourceTree = "<group>";
+		};
+		E774F826A29D4A1E6B749C5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				189546B78DBC3A0006E71E59 /* Pods-Bienestapp_Javier.debug.xcconfig */,
+				4B79FA4740D7E3DE787AAA7C /* Pods-Bienestapp_Javier.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FB88B4823C8937800506E1F /* Bienestapp_Javier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB88B5B23C8937A00506E1F /* Build configuration list for PBXNativeTarget "Bienestapp_Javier" */;
+			buildPhases = (
+				1DCA20C302255B806351EFA8 /* [CP] Check Pods Manifest.lock */,
+				7FB88B4523C8937800506E1F /* Sources */,
+				7FB88B4623C8937800506E1F /* Frameworks */,
+				7FB88B4723C8937800506E1F /* Resources */,
+				08BC4D06DAE4BC55AEA105DB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bienestapp_Javier;
+			productName = Bienestapp_Javier;
+			productReference = 7FB88B4923C8937800506E1F /* Bienestapp_Javier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FB88B4123C8937800506E1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = alumnos;
+				TargetAttributes = {
+					7FB88B4823C8937800506E1F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7FB88B4423C8937800506E1F /* Build configuration list for PBXProject "Bienestapp_Javier" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FB88B4023C8937800506E1F;
+			productRefGroup = 7FB88B4A23C8937800506E1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FB88B4823C8937800506E1F /* Bienestapp_Javier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FB88B4723C8937800506E1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB88B5723C8937A00506E1F /* LaunchScreen.storyboard in Resources */,
+				7FB88B5423C8937A00506E1F /* Assets.xcassets in Resources */,
+				7FB88B5223C8937800506E1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08BC4D06DAE4BC55AEA105DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bienestapp_Javier/Pods-Bienestapp_Javier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bienestapp_Javier/Pods-Bienestapp_Javier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bienestapp_Javier/Pods-Bienestapp_Javier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DCA20C302255B806351EFA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bienestapp_Javier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FB88B4523C8937800506E1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB88B5F23C8974100506E1F /* RegisterViewController.swift in Sources */,
+				7FB88B6723C8984C00506E1F /* TimerControlViewController.swift in Sources */,
+				7FB88B4F23C8937800506E1F /* LoginViewController.swift in Sources */,
+				7FB88B6123C8976200506E1F /* RecoverPasswordViewController.swift in Sources */,
+				7FB88B6B23C8989400506E1F /* MapViewController.swift in Sources */,
+				7FB88B4D23C8937800506E1F /* AppDelegate.swift in Sources */,
+				7FB88B6523C897FE00506E1F /* StatsViewController.swift in Sources */,
+				7FB88B6923C8987000506E1F /* ProfileViewController.swift in Sources */,
+				7FB88B6323C897D500506E1F /* AppListViewController.swift in Sources */,
+				7FB88B6D23C8ADF600506E1F /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7FB88B5023C8937800506E1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FB88B5123C8937800506E1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7FB88B5523C8937A00506E1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FB88B5623C8937A00506E1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FB88B5923C8937A00506E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7FB88B5A23C8937A00506E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FB88B5C23C8937A00506E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 189546B78DBC3A0006E71E59 /* Pods-Bienestapp_Javier.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Bienestapp_Javier/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "u.Bienestapp-Javier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FB88B5D23C8937A00506E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B79FA4740D7E3DE787AAA7C /* Pods-Bienestapp_Javier.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Bienestapp_Javier/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "u.Bienestapp-Javier";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FB88B4423C8937800506E1F /* Build configuration list for PBXProject "Bienestapp_Javier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB88B5923C8937A00506E1F /* Debug */,
+				7FB88B5A23C8937A00506E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FB88B5B23C8937A00506E1F /* Build configuration list for PBXNativeTarget "Bienestapp_Javier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB88B5C23C8937A00506E1F /* Debug */,
+				7FB88B5D23C8937A00506E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FB88B4123C8937800506E1F /* Project object */;
+}
