@@ -41,9 +41,6 @@
                                 <state key="normal" title="Aceptar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="Enter_Login_View" id="m9t-Mn-UIQ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,6 +79,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="password_login_text:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="hI3-22-xEJ"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrV-u4-Utn">
                                 <rect key="frame" x="165" y="551" width="85" height="42"/>
@@ -89,7 +89,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Aceptar"/>
                                 <connections>
-                                    <segue destination="Olp-xN-31w" kind="presentation" identifier="Enter_App_View" id="0jb-lY-8oR"/>
+                                    <action selector="login_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iSZ-eA-CtZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKK-iZ-M2V">
@@ -114,6 +114,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="email_login_text" destination="SnK-xU-oVi" id="Zjb-Bo-wF8"/>
+                        <outlet property="password_login_text" destination="gNL-sw-nST" id="taM-bz-1zg"/>
+                        <segue destination="Olp-xN-31w" kind="show" identifier="LoginEnterSegue" id="1Kz-xj-9aO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,9 +147,6 @@
                                 <state key="normal" title="Aceptar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Olp-xN-31w" kind="presentation" identifier="Enter_App_View" id="Xjs-ga-SCa"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vtY-3c-tgS">
                                 <rect key="frame" x="57" y="359" width="300" height="30"/>
@@ -159,18 +161,35 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <connections>
+                                    <action selector="register_password:" destination="VRA-0U-p5q" eventType="editingDidEnd" id="lJh-W2-QcC"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="05E-4f-X4B">
                                 <rect key="frame" x="57" y="285" width="300" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="name"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Completa todos los campos correctamente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pp-MZ-pPy">
+                                <rect key="frame" x="85" y="488" width="244" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.99954694509506226" green="0.015115097165107727" blue="0.005991640966385603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LYi-eq-F6Y"/>
                     </view>
+                    <connections>
+                        <outlet property="register_email" destination="vtY-3c-tgS" id="p58-vY-Sfd"/>
+                        <outlet property="register_error_text" destination="1pp-MZ-pPy" id="bb9-ce-uzz"/>
+                        <outlet property="register_name" destination="05E-4f-X4B" id="zJq-ei-iQM"/>
+                        <outlet property="register_password" destination="8Me-Xb-eVn" id="Jtr-Vb-AfD"/>
+                        <segue destination="Olp-xN-31w" kind="show" identifier="RegisterEnterSegue" id="2wv-qe-Ob8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xci-Pp-Df8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,31 +242,86 @@
             </objects>
             <point key="canvasLocation" x="3812" y="-322"/>
         </scene>
-        <!--App List View Controller-->
-        <scene sceneID="fLS-yw-f9Q">
+        <!--Lista de Aplicaciones-->
+        <scene sceneID="32X-1g-9QR">
             <objects>
-                <viewController id="waU-jf-yOg" customClass="AppListViewController" customModule="Bienestapp_Javier" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fMj-uH-YQn">
+                <tableViewController id="hiD-ne-Udi" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="du7-gL-vNz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPZ-g9-7lQ">
-                                <rect key="frame" x="135" y="408" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="Js2-qQ-N0T" kind="show" id="Sja-Uf-pkt"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="cV9-ZF-4pt"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HMm-Mf-elU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DDM-kT-jFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="40w-Lf-bnu" customClass="AppCellViewTableController" customModule="Bienestapp_Javier" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="40w-Lf-bnu" id="zvp-bt-hG4" customClass="AppTableViewCell" customModule="Bienestapp_Javier" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gfr-mI-z3L">
+                                            <rect key="frame" x="20" y="9" width="100" height="100"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de la App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXu-Wg-78M">
+                                            <rect key="frame" x="165" y="21" width="194" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="194" id="4gm-CC-YvN"/>
+                                                <constraint firstAttribute="height" constant="30" id="ZfA-nG-XQ3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo de uso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pt-sI-2q9">
+                                            <rect key="frame" x="205" y="80" width="114" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="114" id="8pq-yd-f9R"/>
+                                                <constraint firstAttribute="height" constant="21" id="G18-dA-kK8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Gfr-mI-z3L" firstAttribute="leading" secondItem="zvp-bt-hG4" secondAttribute="leading" constant="20" id="A1i-pQ-4RD"/>
+                                        <constraint firstItem="HXu-Wg-78M" firstAttribute="centerY" secondItem="zvp-bt-hG4" secondAttribute="centerY" constant="-23.75" id="GcH-hg-hvf"/>
+                                        <constraint firstItem="Gfr-mI-z3L" firstAttribute="top" secondItem="zvp-bt-hG4" secondAttribute="top" constant="9" id="JOg-fD-WrJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="Gfr-mI-z3L" secondAttribute="bottom" constant="10.5" id="Ln1-tB-4eU"/>
+                                        <constraint firstItem="0pt-sI-2q9" firstAttribute="centerY" secondItem="zvp-bt-hG4" secondAttribute="centerY" constant="30.75" id="MvF-LH-1i3"/>
+                                        <constraint firstItem="HXu-Wg-78M" firstAttribute="leading" secondItem="Gfr-mI-z3L" secondAttribute="trailing" constant="45" id="OFC-Rc-aVB"/>
+                                        <constraint firstItem="HXu-Wg-78M" firstAttribute="centerX" secondItem="zvp-bt-hG4" secondAttribute="centerX" constant="55" id="UZR-TY-Ap8"/>
+                                        <constraint firstItem="0pt-sI-2q9" firstAttribute="centerX" secondItem="zvp-bt-hG4" secondAttribute="centerX" constant="55" id="lS0-2e-pii"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hiD-ne-Udi" id="lsw-7W-Yyz"/>
+                            <outlet property="delegate" destination="hiD-ne-Udi" id="QCM-Vg-CYo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lista de Aplicaciones" id="N34-Qt-T3r"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WtE-Ac-Dwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2928.985507246377" y="-322.09821428571428"/>
+        </scene>
+        <!--Lista-->
+        <scene sceneID="dr1-DA-JNZ">
+            <objects>
+                <navigationController id="KGT-9L-tHf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lista" image="list" id="phI-2z-PxD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5XK-QI-Cqs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hiD-ne-Udi" kind="relationship" relationship="rootViewController" id="Ay0-ni-HDi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNk-nq-6Zx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2067" y="-322"/>
         </scene>
         <!--Estadisticas-->
         <scene sceneID="SFH-af-YcR">
@@ -297,7 +371,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="RU1-Xj-OKk" kind="relationship" relationship="viewControllers" id="SCz-AC-JgY"/>
+                        <segue destination="KGT-9L-tHf" kind="relationship" relationship="viewControllers" id="leJ-uh-n5Q"/>
                         <segue destination="zVd-Fp-Giz" kind="relationship" relationship="viewControllers" id="sZI-a8-TiS"/>
                         <segue destination="mc5-tJ-bcj" kind="relationship" relationship="viewControllers" id="uex-5O-Mcs"/>
                         <segue destination="MxT-Kv-dfk" kind="relationship" relationship="viewControllers" id="UlK-2f-WmB"/>
@@ -308,25 +382,6 @@
             </objects>
             <point key="canvasLocation" x="1104" y="139"/>
         </scene>
-        <!--Lista-->
-        <scene sceneID="BnD-4y-GAo">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RU1-Xj-OKk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lista" image="list" id="sXf-Xz-SDA"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G3O-9F-gb2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="waU-jf-yOg" kind="relationship" relationship="rootViewController" id="JLo-19-NcM"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0S4-iP-i4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2018.840579710145" y="-322.09821428571428"/>
-        </scene>
     </scenes>
     <resources>
         <image name="clock" width="30" height="30"/>
@@ -336,6 +391,6 @@
         <image name="user_male" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xjs-ga-SCa"/>
+        <segue reference="2wv-qe-Ob8"/>
     </inferredMetricsTieBreakers>
 </document>

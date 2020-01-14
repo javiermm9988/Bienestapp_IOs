@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		7FB88B6923C8987000506E1F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6823C8987000506E1F /* ProfileViewController.swift */; };
 		7FB88B6B23C8989400506E1F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6A23C8989400506E1F /* MapViewController.swift */; };
 		7FB88B6D23C8ADF600506E1F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */; };
+		7FD54E9C23CC84D200D290F6 /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD54E9B23CC84D200D290F6 /* AppTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		7FB88B6823C8987000506E1F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7FB88B6A23C8989400506E1F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		7FD54E9B23CC84D200D290F6 /* AppTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTableViewCell.swift; sourceTree = "<group>"; };
 		BDBDD4FFA29AB2A66E154CB8 /* Pods_Bienestapp_Javier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestapp_Javier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 				7FB88B5323C8937A00506E1F /* Assets.xcassets */,
 				7FB88B5523C8937A00506E1F /* LaunchScreen.storyboard */,
 				7FB88B5823C8937A00506E1F /* Info.plist */,
+				7FD54E9B23CC84D200D290F6 /* AppTableViewCell.swift */,
 			);
 			path = Bienestapp_Javier;
 			sourceTree = "<group>";
@@ -109,7 +112,6 @@
 				189546B78DBC3A0006E71E59 /* Pods-Bienestapp_Javier.debug.xcconfig */,
 				4B79FA4740D7E3DE787AAA7C /* Pods-Bienestapp_Javier.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -235,6 +237,7 @@
 				7FB88B6B23C8989400506E1F /* MapViewController.swift in Sources */,
 				7FB88B4D23C8937800506E1F /* AppDelegate.swift in Sources */,
 				7FB88B6523C897FE00506E1F /* StatsViewController.swift in Sources */,
+				7FD54E9C23CC84D200D290F6 /* AppTableViewCell.swift in Sources */,
 				7FB88B6923C8987000506E1F /* ProfileViewController.swift in Sources */,
 				7FB88B6323C897D500506E1F /* AppListViewController.swift in Sources */,
 				7FB88B6D23C8ADF600506E1F /* DetailsViewController.swift in Sources */,
