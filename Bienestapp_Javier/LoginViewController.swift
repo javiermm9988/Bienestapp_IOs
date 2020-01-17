@@ -6,6 +6,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.email_login_text.text = "javier@hotmail.com"
+        self.password_login_text.text = "1234"
+        
     }
     
     @IBOutlet weak var email_login_text: UITextField!
@@ -23,7 +26,7 @@ class LoginViewController: UIViewController {
     
     func LoginUser(email: String, password: String) {
         
-        let url = URL(string: "")
+        let url = URL(string: "http://localhost:8888/BienestarDigital/public/index.php/api/Login")
         
         let json = ["email": email, "password": password]
         

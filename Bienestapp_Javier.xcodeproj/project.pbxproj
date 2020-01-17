@@ -15,13 +15,14 @@
 		7FB88B5723C8937A00506E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB88B5523C8937A00506E1F /* LaunchScreen.storyboard */; };
 		7FB88B5F23C8974100506E1F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B5E23C8974100506E1F /* RegisterViewController.swift */; };
 		7FB88B6123C8976200506E1F /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6023C8976200506E1F /* RecoverPasswordViewController.swift */; };
-		7FB88B6323C897D500506E1F /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6223C897D500506E1F /* AppListViewController.swift */; };
 		7FB88B6523C897FE00506E1F /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6423C897FE00506E1F /* StatsViewController.swift */; };
 		7FB88B6723C8984C00506E1F /* TimerControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6623C8984C00506E1F /* TimerControlViewController.swift */; };
 		7FB88B6923C8987000506E1F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6823C8987000506E1F /* ProfileViewController.swift */; };
 		7FB88B6B23C8989400506E1F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6A23C8989400506E1F /* MapViewController.swift */; };
 		7FB88B6D23C8ADF600506E1F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */; };
-		7FD54E9C23CC84D200D290F6 /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD54E9B23CC84D200D290F6 /* AppTableViewCell.swift */; };
+		7FFB01C523D0625F000C3A43 /* AppListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB01C423D0625F000C3A43 /* AppListTableViewCell.swift */; };
+		7FFB01C723D063C6000C3A43 /* AppsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB01C623D063C6000C3A43 /* AppsListViewController.swift */; };
+		7FFB01C923D097CE000C3A43 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB01C823D097CE000C3A43 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,13 +37,14 @@
 		7FB88B5823C8937A00506E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FB88B5E23C8974100506E1F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7FB88B6023C8976200506E1F /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
-		7FB88B6223C897D500506E1F /* AppListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewController.swift; sourceTree = "<group>"; };
 		7FB88B6423C897FE00506E1F /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		7FB88B6623C8984C00506E1F /* TimerControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerControlViewController.swift; sourceTree = "<group>"; };
 		7FB88B6823C8987000506E1F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7FB88B6A23C8989400506E1F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		7FD54E9B23CC84D200D290F6 /* AppTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTableViewCell.swift; sourceTree = "<group>"; };
+		7FFB01C423D0625F000C3A43 /* AppListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListTableViewCell.swift; sourceTree = "<group>"; };
+		7FFB01C623D063C6000C3A43 /* AppsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsListViewController.swift; sourceTree = "<group>"; };
+		7FFB01C823D097CE000C3A43 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		BDBDD4FFA29AB2A66E154CB8 /* Pods_Bienestapp_Javier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestapp_Javier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,17 +93,18 @@
 				7FB88B4E23C8937800506E1F /* LoginViewController.swift */,
 				7FB88B5E23C8974100506E1F /* RegisterViewController.swift */,
 				7FB88B6023C8976200506E1F /* RecoverPasswordViewController.swift */,
-				7FB88B6223C897D500506E1F /* AppListViewController.swift */,
-				7FB88B6423C897FE00506E1F /* StatsViewController.swift */,
+				7FFB01C623D063C6000C3A43 /* AppsListViewController.swift */,
+				7FFB01C423D0625F000C3A43 /* AppListTableViewCell.swift */,
+				7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */,
 				7FB88B6623C8984C00506E1F /* TimerControlViewController.swift */,
+				7FB88B6423C897FE00506E1F /* StatsViewController.swift */,
 				7FB88B6823C8987000506E1F /* ProfileViewController.swift */,
 				7FB88B6A23C8989400506E1F /* MapViewController.swift */,
-				7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */,
 				7FB88B5023C8937800506E1F /* Main.storyboard */,
 				7FB88B5323C8937A00506E1F /* Assets.xcassets */,
 				7FB88B5523C8937A00506E1F /* LaunchScreen.storyboard */,
 				7FB88B5823C8937A00506E1F /* Info.plist */,
-				7FD54E9B23CC84D200D290F6 /* AppTableViewCell.swift */,
+				7FFB01C823D097CE000C3A43 /* App.swift */,
 			);
 			path = Bienestapp_Javier;
 			sourceTree = "<group>";
@@ -234,12 +237,13 @@
 				7FB88B6723C8984C00506E1F /* TimerControlViewController.swift in Sources */,
 				7FB88B4F23C8937800506E1F /* LoginViewController.swift in Sources */,
 				7FB88B6123C8976200506E1F /* RecoverPasswordViewController.swift in Sources */,
+				7FFB01C723D063C6000C3A43 /* AppsListViewController.swift in Sources */,
 				7FB88B6B23C8989400506E1F /* MapViewController.swift in Sources */,
 				7FB88B4D23C8937800506E1F /* AppDelegate.swift in Sources */,
+				7FFB01C523D0625F000C3A43 /* AppListTableViewCell.swift in Sources */,
 				7FB88B6523C897FE00506E1F /* StatsViewController.swift in Sources */,
-				7FD54E9C23CC84D200D290F6 /* AppTableViewCell.swift in Sources */,
+				7FFB01C923D097CE000C3A43 /* App.swift in Sources */,
 				7FB88B6923C8987000506E1F /* ProfileViewController.swift in Sources */,
-				7FB88B6323C897D500506E1F /* AppListViewController.swift in Sources */,
 				7FB88B6D23C8ADF600506E1F /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,10 @@
-
 import UIKit
 
-class AppTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var icon_image_list: UIImageView!
+class AppListTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var name_app_list: UILabel!
     @IBOutlet weak var usage_app_list: UILabel!
+    @IBOutlet weak var image_app_list: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,6 +17,4 @@ class AppTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    
-    
 }

@@ -1,10 +1,10 @@
 import UIKit
 
-class AppListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AppsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     class App {
         var name = ""
-        var use = ""
+        var usage = ""
     }
     
     var apps:[App] = []
@@ -14,15 +14,17 @@ class AppListViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         let instagram = App()
         instagram.name = "Instagram"
-        instagram.use = "1.3h"
+        instagram.usage = "2h"
         
         let whatsapp = App()
         whatsapp.name = "Whatsapp"
-        whatsapp.use = "2h"
+        whatsapp.usage = "3h"
         
         let facebook = App()
         facebook.name = "Facebook"
-        facebook.use = "1h"
+        facebook.usage = "1h"
+        
+        apps = [instagram, whatsapp, facebook]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,16 +33,18 @@ class AppListViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellAppList", for: indexPath) as! AppListTableViewCell
-        
         cell.name_app_list.text = apps[indexPath.row].name
-        cell.usage_app_list.text = apps[indexPath.row].use
-        //cell.imageCell.image = UIImage(named: exercisesList[indexPath.row])
+        cell.usage_app_list.text = apps[indexPath.row].usage
+        //cell.image_app_list.image = UIImage(named: exercisesList[indexPath.row])
         
+        //self.performSegue(withIdentifier: "AppCellEnterSegue" , sender: nil)
         return cell
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
+    
     
 }

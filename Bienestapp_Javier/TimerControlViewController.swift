@@ -7,5 +7,8 @@ class TimerControlViewController: UIViewController {
         
     }
     
+    @IBAction func save_changes_details(_ sender: Any) {
+        self.performSegue(withIdentifier: "returnDetails", sender: nil)
+    }
     
 }

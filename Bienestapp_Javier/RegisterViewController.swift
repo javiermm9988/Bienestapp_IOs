@@ -13,7 +13,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var register_password: UITextField!
     @IBOutlet weak var register_error_text: UILabel!
     
-    @IBAction func register_button(_ sender: Any) {
+    
+    @IBAction func registerButton(_ sender: Any) {
         
         if register_name.text?.isEmpty ?? true || register_email.text?.isEmpty ?? true || register_password.text?.isEmpty ?? true
         {
@@ -25,11 +26,11 @@ class RegisterViewController: UIViewController {
     
     func registerUser(name: String, email: String, password: String) {
         
-        let url = URL(string: "")
+        let url = URL(string: "http://localhost:8888/BienestarDigital/public/index.php/api/Register")!
         
         let json = ["name": name, "email": email, "password": password]
         
-        Alamofire.request(url!, method: .post, parameters: json, encoding: JSONEncoding.default, headers: nil).responseJSON {
+        Alamofire.request(url, method: .post, parameters: json, encoding: JSONEncoding.default, headers: nil).responseJSON {
             (response) in
             
             switch(response.response?.statusCode){
@@ -41,6 +42,8 @@ class RegisterViewController: UIViewController {
                     
                     self.performSegue(withIdentifier: "RegisterEnterSegue" , sender: nil)
                     
+                    print(token)
+                    
                 }
             case 401:
                 if let json = response.result.value as? [String: Any] {
@@ -48,6 +51,7 @@ class RegisterViewController: UIViewController {
                     let message = json["message"] as! String
                     self.register_error_text.text = message
                     self.register_error_text.isHidden = false
+                    print(message)
                 }
             default:
                 print("nada")
