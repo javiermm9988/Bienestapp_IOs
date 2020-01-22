@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68025D3E355FFB7C7FDF53B7 /* Pods_Bienestapp_Javier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBDD4FFA29AB2A66E154CB8 /* Pods_Bienestapp_Javier.framework */; };
+		1B9277AD501FE227FF62A803 /* Pods_all_pods_Bienestapp_Javier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35182CE013118E9AA710015 /* Pods_all_pods_Bienestapp_Javier.framework */; };
 		7FB88B4D23C8937800506E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B4C23C8937800506E1F /* AppDelegate.swift */; };
 		7FB88B4F23C8937800506E1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B4E23C8937800506E1F /* LoginViewController.swift */; };
 		7FB88B5223C8937800506E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB88B5023C8937800506E1F /* Main.storyboard */; };
@@ -20,14 +20,18 @@
 		7FB88B6923C8987000506E1F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6823C8987000506E1F /* ProfileViewController.swift */; };
 		7FB88B6B23C8989400506E1F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6A23C8989400506E1F /* MapViewController.swift */; };
 		7FB88B6D23C8ADF600506E1F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */; };
+		7FD30DC523D7045E00F52BFF /* DetailsDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD30DC423D7045E00F52BFF /* DetailsDataViewController.swift */; };
+		7FD8A3D723D8680C00090E78 /* RestorePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8A3D623D8680C00090E78 /* RestorePasswordViewController.swift */; };
 		7FFB01C523D0625F000C3A43 /* AppListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB01C423D0625F000C3A43 /* AppListTableViewCell.swift */; };
 		7FFB01C723D063C6000C3A43 /* AppsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB01C623D063C6000C3A43 /* AppsListViewController.swift */; };
 		7FFB01C923D097CE000C3A43 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB01C823D097CE000C3A43 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00BC77007BCE18E7358386BC /* Pods-all_pods-Bienestapp_Javier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-all_pods-Bienestapp_Javier.release.xcconfig"; path = "Target Support Files/Pods-all_pods-Bienestapp_Javier/Pods-all_pods-Bienestapp_Javier.release.xcconfig"; sourceTree = "<group>"; };
 		189546B78DBC3A0006E71E59 /* Pods-Bienestapp_Javier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestapp_Javier.debug.xcconfig"; path = "Target Support Files/Pods-Bienestapp_Javier/Pods-Bienestapp_Javier.debug.xcconfig"; sourceTree = "<group>"; };
 		4B79FA4740D7E3DE787AAA7C /* Pods-Bienestapp_Javier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestapp_Javier.release.xcconfig"; path = "Target Support Files/Pods-Bienestapp_Javier/Pods-Bienestapp_Javier.release.xcconfig"; sourceTree = "<group>"; };
+		4F5DFA080D27DB03246AB955 /* Pods-all_pods-Bienestapp_Javier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-all_pods-Bienestapp_Javier.debug.xcconfig"; path = "Target Support Files/Pods-all_pods-Bienestapp_Javier/Pods-all_pods-Bienestapp_Javier.debug.xcconfig"; sourceTree = "<group>"; };
 		7FB88B4923C8937800506E1F /* Bienestapp_Javier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bienestapp_Javier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB88B4C23C8937800506E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FB88B4E23C8937800506E1F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -42,10 +46,12 @@
 		7FB88B6823C8987000506E1F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7FB88B6A23C8989400506E1F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		7FD30DC423D7045E00F52BFF /* DetailsDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsDataViewController.swift; sourceTree = "<group>"; };
+		7FD8A3D623D8680C00090E78 /* RestorePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordViewController.swift; sourceTree = "<group>"; };
 		7FFB01C423D0625F000C3A43 /* AppListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListTableViewCell.swift; sourceTree = "<group>"; };
 		7FFB01C623D063C6000C3A43 /* AppsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsListViewController.swift; sourceTree = "<group>"; };
 		7FFB01C823D097CE000C3A43 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		BDBDD4FFA29AB2A66E154CB8 /* Pods_Bienestapp_Javier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestapp_Javier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35182CE013118E9AA710015 /* Pods_all_pods_Bienestapp_Javier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_all_pods_Bienestapp_Javier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68025D3E355FFB7C7FDF53B7 /* Pods_Bienestapp_Javier.framework in Frameworks */,
+				1B9277AD501FE227FF62A803 /* Pods_all_pods_Bienestapp_Javier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +69,7 @@
 		0A344089C20147F417AEEBFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BDBDD4FFA29AB2A66E154CB8 /* Pods_Bienestapp_Javier.framework */,
+				A35182CE013118E9AA710015 /* Pods_all_pods_Bienestapp_Javier.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				7FFB01C623D063C6000C3A43 /* AppsListViewController.swift */,
 				7FFB01C423D0625F000C3A43 /* AppListTableViewCell.swift */,
 				7FB88B6C23C8ADF600506E1F /* DetailsViewController.swift */,
+				7FD30DC423D7045E00F52BFF /* DetailsDataViewController.swift */,
 				7FB88B6623C8984C00506E1F /* TimerControlViewController.swift */,
 				7FB88B6423C897FE00506E1F /* StatsViewController.swift */,
 				7FB88B6823C8987000506E1F /* ProfileViewController.swift */,
@@ -105,6 +112,7 @@
 				7FB88B5523C8937A00506E1F /* LaunchScreen.storyboard */,
 				7FB88B5823C8937A00506E1F /* Info.plist */,
 				7FFB01C823D097CE000C3A43 /* App.swift */,
+				7FD8A3D623D8680C00090E78 /* RestorePasswordViewController.swift */,
 			);
 			path = Bienestapp_Javier;
 			sourceTree = "<group>";
@@ -114,6 +122,8 @@
 			children = (
 				189546B78DBC3A0006E71E59 /* Pods-Bienestapp_Javier.debug.xcconfig */,
 				4B79FA4740D7E3DE787AAA7C /* Pods-Bienestapp_Javier.release.xcconfig */,
+				4F5DFA080D27DB03246AB955 /* Pods-all_pods-Bienestapp_Javier.debug.xcconfig */,
+				00BC77007BCE18E7358386BC /* Pods-all_pods-Bienestapp_Javier.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -193,15 +203,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bienestapp_Javier/Pods-Bienestapp_Javier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-all_pods-Bienestapp_Javier/Pods-all_pods-Bienestapp_Javier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bienestapp_Javier/Pods-Bienestapp_Javier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-all_pods-Bienestapp_Javier/Pods-all_pods-Bienestapp_Javier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bienestapp_Javier/Pods-Bienestapp_Javier-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-all_pods-Bienestapp_Javier/Pods-all_pods-Bienestapp_Javier-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1DCA20C302255B806351EFA8 /* [CP] Check Pods Manifest.lock */ = {
@@ -219,7 +229,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bienestapp_Javier-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-all_pods-Bienestapp_Javier-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -237,6 +247,7 @@
 				7FB88B6723C8984C00506E1F /* TimerControlViewController.swift in Sources */,
 				7FB88B4F23C8937800506E1F /* LoginViewController.swift in Sources */,
 				7FB88B6123C8976200506E1F /* RecoverPasswordViewController.swift in Sources */,
+				7FD8A3D723D8680C00090E78 /* RestorePasswordViewController.swift in Sources */,
 				7FFB01C723D063C6000C3A43 /* AppsListViewController.swift in Sources */,
 				7FB88B6B23C8989400506E1F /* MapViewController.swift in Sources */,
 				7FB88B4D23C8937800506E1F /* AppDelegate.swift in Sources */,
@@ -244,6 +255,7 @@
 				7FB88B6523C897FE00506E1F /* StatsViewController.swift in Sources */,
 				7FFB01C923D097CE000C3A43 /* App.swift in Sources */,
 				7FB88B6923C8987000506E1F /* ProfileViewController.swift in Sources */,
+				7FD30DC523D7045E00F52BFF /* DetailsDataViewController.swift in Sources */,
 				7FB88B6D23C8ADF600506E1F /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,7 +400,7 @@
 		};
 		7FB88B5C23C8937A00506E1F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 189546B78DBC3A0006E71E59 /* Pods-Bienestapp_Javier.debug.xcconfig */;
+			baseConfigurationReference = 4F5DFA080D27DB03246AB955 /* Pods-all_pods-Bienestapp_Javier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,7 +418,7 @@
 		};
 		7FB88B5D23C8937A00506E1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B79FA4740D7E3DE787AAA7C /* Pods-Bienestapp_Javier.release.xcconfig */;
+			baseConfigurationReference = 00BC77007BCE18E7358386BC /* Pods-all_pods-Bienestapp_Javier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -203,72 +203,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restricción Horaria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A84-sv-p4K">
-                                <rect key="frame" x="81" y="174" width="253" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Horas máximas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TYu-Xk-smV">
-                                <rect key="frame" x="42" y="292" width="174" height="30"/>
+                                <rect key="frame" x="42" y="260" width="174" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restricción Horaria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A84-sv-p4K">
+                                <rect key="frame" x="81" y="137" width="253" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Horas máximas de uso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsj-LM-rIl">
-                                <rect key="frame" x="42" y="245" width="225" height="28"/>
+                                <rect key="frame" x="42" y="210" width="225" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="K6y-Ch-8s4">
-                                <rect key="frame" x="0.0" y="390" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="600943395.52716804">
-                                    <!--2020-01-17 08:43:15 +0000-->
-                                </date>
-                                <locale key="locale" localeIdentifier="es_ES"/>
-                            </datePicker>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ASJ-Ie-jXi">
-                                <rect key="frame" x="0.0" y="596" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="600943678.37249506">
-                                    <!--2020-01-17 08:47:58 +0000-->
-                                </date>
-                                <locale key="locale" localeIdentifier="es_ES"/>
-                            </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hora inicial para usar la app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5II-kr-RQf">
-                                <rect key="frame" x="42" y="354" width="272" height="28"/>
+                                <rect key="frame" x="42" y="310" width="272" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hora final para usar la app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaM-3J-UtO">
-                                <rect key="frame" x="42" y="561" width="246" height="27"/>
+                                <rect key="frame" x="42" y="410" width="246" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1e-CA-W6j">
-                                <rect key="frame" x="135" y="758" width="144" height="38"/>
+                                <rect key="frame" x="129" y="769" width="156" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Gardar cambios"/>
+                                <state key="normal" title="Guardar cambios"/>
                                 <connections>
                                     <action selector="save_changes_details:" destination="zVd-Fp-Giz" eventType="touchUpInside" id="1DK-DO-pLk"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Desde:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUS-NK-rAr">
+                                <rect key="frame" x="42" y="360" width="174" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hasta:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EPK-fW-wG0">
+                                <rect key="frame" x="42" y="460" width="174" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pQR-xz-NS8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Horario" image="clock" id="uVI-Cn-C5J"/>
                     <connections>
+                        <outlet property="from_hour_text" destination="QUS-NK-rAr" id="932-YU-mfZ"/>
+                        <outlet property="max_hour_text" destination="TYu-Xk-smV" id="rnG-4d-bcf"/>
+                        <outlet property="to_hour_text" destination="EPK-fW-wG0" id="Lud-im-aIL"/>
                         <segue destination="MgT-BP-0LQ" kind="unwind" identifier="returnDetails" unwindAction="returnToDetails:" id="pVK-Nx-k6J"/>
                     </connections>
                 </viewController>
@@ -351,10 +352,10 @@
             </objects>
             <point key="canvasLocation" x="3839" y="584"/>
         </scene>
-        <!--View Controller-->
+        <!--Restore Password View Controller-->
         <scene sceneID="P1R-p2-sxv">
             <objects>
-                <viewController id="Vmu-Sf-FIW" sceneMemberID="viewController">
+                <viewController id="Vmu-Sf-FIW" customClass="RestorePasswordViewController" customModule="Bienestapp_Javier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hxy-Zp-TuQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -404,15 +405,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uzK-f9-elg"/>
                     </view>
+                    <connections>
+                        <outlet property="confirm_password_text" destination="jfv-YB-0Mg" id="ffS-dL-J7J"/>
+                        <outlet property="new_password_text" destination="oDs-3i-gEZ" id="FGf-wK-KFb"/>
+                        <outlet property="old_password_text" destination="R0w-BX-q5T" id="s7s-PU-sth"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I38-8f-6CE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4698.5507246376819" y="583.92857142857144"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Details Data View Controller-->
         <scene sceneID="7KR-WK-1AZ">
             <objects>
-                <tableViewController id="Blt-Kf-gKy" sceneMemberID="viewController">
+                <tableViewController id="Blt-Kf-gKy" customClass="DetailsDataViewController" customModule="Bienestapp_Javier" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rYf-p4-OhG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="191"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -524,10 +530,16 @@
                             <outlet property="delegate" destination="Blt-Kf-gKy" id="hsC-5K-eyb"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="beforeYes_use_label" destination="Fpu-Uw-old" id="769-0G-00d"/>
+                        <outlet property="today_use_label" destination="Big-pb-v2g" id="est-E9-TJK"/>
+                        <outlet property="total_use_label" destination="28q-Sj-zQ0" id="J2g-ly-oN8"/>
+                        <outlet property="yesterday_use_label" destination="t1x-Ep-Ncf" id="gse-Ov-3tl"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wo-tb-bHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3815.9420289855075" y="-1017.1875"/>
+            <point key="canvasLocation" x="3941" y="-936"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="gQv-w1-S0I">
@@ -557,8 +569,8 @@
                                     <segue destination="Blt-Kf-gKy" kind="embed" id="VGd-aj-xup"/>
                                 </connections>
                             </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rt-kb-p3V">
-                                <rect key="frame" x="125" y="145" width="164" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rt-kb-p3V">
+                                <rect key="frame" x="125" y="125" width="164" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -670,8 +682,8 @@
                                                     <rect key="frame" x="20" y="4" width="110" height="110"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4G-ej-fmY">
-                                                    <rect key="frame" x="354" y="88" width="31" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uso" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4G-ej-fmY">
+                                                    <rect key="frame" x="285" y="88" width="100" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -711,6 +723,9 @@
                         <viewLayoutGuide key="safeArea" id="Xbp-SU-gaM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lista" id="y6X-a4-kxg"/>
+                    <connections>
+                        <outlet property="table_view" destination="m5y-uH-eJW" id="Wmy-cL-Vvw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikD-Da-fgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

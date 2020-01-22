@@ -1,4 +1,12 @@
+platform :ios, '12.2'
+use_frameworks!
+
+abstract_target 'all_pods' do
+	pod 'Alamofire'
+	pod 'AlamofireImage'
+
 target 'Bienestapp_Javier' do
-	use_frameworks!
-	pod 'Alamofire', '~> 4.5'
+#	all_pods
+end
+
 end

@@ -1,4 +1,6 @@
 import UIKit
+import AlamofireImage
+import Alamofire
 
 class AppListTableViewCell: UITableViewCell {
     
@@ -16,5 +18,7 @@ class AppListTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
 
 }
