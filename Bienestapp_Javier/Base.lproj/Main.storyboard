@@ -386,6 +386,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Aceptar"/>
+                                <connections>
+                                    <action selector="restore_password_button:" destination="Vmu-Sf-FIW" eventType="touchUpInside" id="WMA-Ah-UBT"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Introduzca la contraseña actual y posteriormente la nueva para cambiar la contraseña" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hT8-SL-SZm">
                                 <rect key="frame" x="87" y="213" width="240" height="111"/>
@@ -409,6 +412,7 @@
                         <outlet property="confirm_password_text" destination="jfv-YB-0Mg" id="ffS-dL-J7J"/>
                         <outlet property="new_password_text" destination="oDs-3i-gEZ" id="FGf-wK-KFb"/>
                         <outlet property="old_password_text" destination="R0w-BX-q5T" id="s7s-PU-sth"/>
+                        <segue destination="MxT-Kv-dfk" kind="show" identifier="return_profile_segue" id="Pf3-KM-kkL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I38-8f-6CE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -780,5 +784,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="1Kz-xj-9aO"/>
+        <segue reference="Pf3-KM-kkL"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -107,12 +107,12 @@
 				7FB88B6423C897FE00506E1F /* StatsViewController.swift */,
 				7FB88B6823C8987000506E1F /* ProfileViewController.swift */,
 				7FB88B6A23C8989400506E1F /* MapViewController.swift */,
+				7FD8A3D623D8680C00090E78 /* RestorePasswordViewController.swift */,
 				7FB88B5023C8937800506E1F /* Main.storyboard */,
 				7FB88B5323C8937A00506E1F /* Assets.xcassets */,
 				7FB88B5523C8937A00506E1F /* LaunchScreen.storyboard */,
 				7FB88B5823C8937A00506E1F /* Info.plist */,
 				7FFB01C823D097CE000C3A43 /* App.swift */,
-				7FD8A3D623D8680C00090E78 /* RestorePasswordViewController.swift */,
 			);
 			path = Bienestapp_Javier;
 			sourceTree = "<group>";

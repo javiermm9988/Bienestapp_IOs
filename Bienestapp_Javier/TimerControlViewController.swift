@@ -70,10 +70,6 @@ class TimerControlViewController: UIViewController {
     }
     
     @IBAction func save_changes_details(_ sender: Any) {
-//        print(global_id_app)
-//        print(max_hour_text.text!)
-//        print(from_hour_text.text!)
-//        print(to_hour_text.text!)
         addRestriction(maxTime: max_hour_text.text!, fromTime: from_hour_text.text!, toTime: to_hour_text.text!)
     }
     
@@ -105,9 +101,4 @@ class TimerControlViewController: UIViewController {
             }
         }
     }
-    
-    
-    
-    
-    
 }
