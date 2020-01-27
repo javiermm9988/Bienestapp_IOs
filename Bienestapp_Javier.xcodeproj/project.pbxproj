@@ -24,7 +24,6 @@
 		7FD8A3D723D8680C00090E78 /* RestorePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8A3D623D8680C00090E78 /* RestorePasswordViewController.swift */; };
 		7FFB01C523D0625F000C3A43 /* AppListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB01C423D0625F000C3A43 /* AppListTableViewCell.swift */; };
 		7FFB01C723D063C6000C3A43 /* AppsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB01C623D063C6000C3A43 /* AppsListViewController.swift */; };
-		7FFB01C923D097CE000C3A43 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB01C823D097CE000C3A43 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +49,6 @@
 		7FD8A3D623D8680C00090E78 /* RestorePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordViewController.swift; sourceTree = "<group>"; };
 		7FFB01C423D0625F000C3A43 /* AppListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListTableViewCell.swift; sourceTree = "<group>"; };
 		7FFB01C623D063C6000C3A43 /* AppsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsListViewController.swift; sourceTree = "<group>"; };
-		7FFB01C823D097CE000C3A43 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		A35182CE013118E9AA710015 /* Pods_all_pods_Bienestapp_Javier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_all_pods_Bienestapp_Javier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,7 +110,6 @@
 				7FB88B5323C8937A00506E1F /* Assets.xcassets */,
 				7FB88B5523C8937A00506E1F /* LaunchScreen.storyboard */,
 				7FB88B5823C8937A00506E1F /* Info.plist */,
-				7FFB01C823D097CE000C3A43 /* App.swift */,
 			);
 			path = Bienestapp_Javier;
 			sourceTree = "<group>";
@@ -253,7 +250,6 @@
 				7FB88B4D23C8937800506E1F /* AppDelegate.swift in Sources */,
 				7FFB01C523D0625F000C3A43 /* AppListTableViewCell.swift in Sources */,
 				7FB88B6523C897FE00506E1F /* StatsViewController.swift in Sources */,
-				7FFB01C923D097CE000C3A43 /* App.swift in Sources */,
 				7FB88B6923C8987000506E1F /* ProfileViewController.swift in Sources */,
 				7FD30DC523D7045E00F52BFF /* DetailsDataViewController.swift in Sources */,
 				7FB88B6D23C8ADF600506E1F /* DetailsViewController.swift in Sources */,

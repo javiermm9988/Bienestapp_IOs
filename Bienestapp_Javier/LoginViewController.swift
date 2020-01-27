@@ -6,7 +6,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.email_login_text.text = "javier@hotmail.com"
+        self.email_login_text.text = "javimm988@gmail.com"
         self.password_login_text.text = "1234"
         
     }
@@ -51,7 +51,6 @@ class LoginViewController: UIViewController {
                 }
             default:
                 print("nada")
-                
             }
         }
     }

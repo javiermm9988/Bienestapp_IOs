@@ -41,11 +41,25 @@
                                 <state key="normal" title="Aceptar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="recovery_password_button:" destination="PNb-Qw-gpg" eventType="touchUpInside" id="tdF-vW-Ac9"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aio-n9-3fR">
+                                <rect key="frame" x="57" y="450" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Gsy-zF-kFo"/>
                     </view>
+                    <connections>
+                        <outlet property="email_recovery_text" destination="Aio-n9-3fR" id="ejh-eZ-Zml"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="RecoveryPasswordSegue" id="yPU-aD-YpX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOe-R7-oy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -638,6 +652,9 @@
                         <viewLayoutGuide key="safeArea" id="pF5-Er-7XL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa" image="map_marker" id="Jfa-n0-MPe"/>
+                    <connections>
+                        <outlet property="map_view" destination="LX3-Yc-eqU" id="6NL-cR-LGv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H03-oa-idH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
