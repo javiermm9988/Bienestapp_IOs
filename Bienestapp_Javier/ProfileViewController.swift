@@ -11,6 +11,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var name_label: UILabel!
     @IBOutlet weak var email_label: UILabel!
     
+    /// Obtiene los datos del usuario y los muestra en la pantalla
     func getUsersData() {
         let url = "http://localhost:8888/BienestarDigital/public/index.php/api/ShowData"
         

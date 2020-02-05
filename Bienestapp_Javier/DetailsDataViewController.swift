@@ -24,6 +24,8 @@ class DetailsDataViewController: UITableViewController {
     var idUseSt: String = ""
     
     
+    /// Método que hace la petición para coger los datos de tiempo de uso de las apps y sus respectivos campos dentro de la vista
+    
     func getUseAppsData() {
         let url = "http://localhost:8888/BienestarDigital/public/index.php/api/appUseDetails/"+global_name_app
         

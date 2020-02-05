@@ -14,6 +14,9 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var register_error_text: UILabel!
     
     
+    /// Botón que se encarga de la funcionalidad del registro
+    ///
+    /// - Parameter sender: <#sender description#>
     @IBAction func registerButton(_ sender: Any) {
         
         if register_name.text?.isEmpty ?? true || register_email.text?.isEmpty ?? true || register_password.text?.isEmpty ?? true
@@ -24,6 +27,12 @@ class RegisterViewController: UIViewController {
         }
     }
     
+    /// Método que llama a la api para hacer el registro del usuario
+    ///
+    /// - Parameters:
+    ///   - name: nombre en el formulario de registro
+    ///   - email: email en el formulario de registro
+    ///   - password: password en el formulario de registro
     func registerUser(name: String, email: String, password: String) {
         
         let url = URL(string: "http://localhost:8888/BienestarDigital/public/index.php/api/Register")!

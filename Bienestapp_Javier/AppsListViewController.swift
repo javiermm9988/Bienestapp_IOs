@@ -19,31 +19,33 @@ class AppsListViewController: UIViewController, UITableViewDelegate, UITableView
         getAppsData()
     }
     
+    /// Obtiene los datos del tiempo de uso de las aplicaciones y los añade a la lista
     func getAppsData() {
         let url = "http://localhost:8888/BienestarDigital/public/index.php/api/showAllAppUseToday"
         
         let userToken : String = UserDefaults.standard.value(forKey: "token") as! String
         let userTokenHeaders = ["Authorization" : userToken]
         
-        Alamofire.request(url, headers:userTokenHeaders).responseJSON
-            { response in
-                if let JSON = response.result.value {
-                    self.jsonArray = JSON as? NSArray
-                    for item in self.jsonArray! as! [NSDictionary] {
-                        
-                        let name = item["name"] as? String
-                        let use = item["use"] as? String
-                        let iconURL = item["icon"] as? String
-                        
-                        self.nameArray.append((name)!)
-                        self.useArray.append((use) ?? "0")
-                        self.iconURLArray.append((iconURL)!)
-                    }
-                    self.table_view.reloadData()
+        Alamofire.request(url, headers:userTokenHeaders).responseJSON { response in
+            if let JSON = response.result.value {
+                self.jsonArray = JSON as? NSArray
+                for item in self.jsonArray! as! [NSDictionary] {
+                    
+                    let name = item["name"] as? String
+                    let use = item["use"] as? String
+                    let iconURL = item["icon"] as? String
+                    
+                    self.nameArray.append((name)!)
+                    self.useArray.append((use) ?? "0")
+                    self.iconURLArray.append((iconURL)!)
                 }
+                self.table_view.reloadData()
+            }
         }
     }
     
+    /// Los siguientes métodos añaden los datos a las celdas de la vista de los tiempos de uso de las apps
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return nameArray.count
     }

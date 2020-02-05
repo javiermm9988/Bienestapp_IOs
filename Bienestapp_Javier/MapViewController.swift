@@ -17,12 +17,11 @@ class MapViewController: UIViewController {
         map_view.setRegion(region, animated: true)
     }
     
-    
-    
     var jsonArray: NSArray?
     var latitudeArray: Array<String> = []
     var longitudeArray: Array<String> = []
     
+    /// Obtiene las localizaciones de la base de datos
     func getLocationsUse() {
         let url = "http://localhost:8888/BienestarDigital/public/index.php/api/useLocation"
         
@@ -47,6 +46,7 @@ class MapViewController: UIViewController {
         }
     }
     
+    /// Crea los marcadores en la pantalla con los datos anteriormente obtenidos
     func createPoints () {
         
         var locations = 0

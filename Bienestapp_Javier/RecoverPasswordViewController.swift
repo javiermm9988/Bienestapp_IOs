@@ -14,6 +14,9 @@ class RecoverPasswordViewController: UIViewController {
         recoveryPassword(email: email_recovery_text.text!)
     }
     
+    /// Método el cual se encarga de enviar un correo electrónico al usuario que se le haya olvidado su contraseña
+    ///
+    /// - Parameter email: email para recuperar contraseña
     func recoveryPassword(email: String) {
         
         let url = URL(string: "http://localhost:8888/BienestarDigital/public/index.php/api/restorePassword")

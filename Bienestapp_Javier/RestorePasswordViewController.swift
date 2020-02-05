@@ -16,6 +16,12 @@ class RestorePasswordViewController: UIViewController {
         restorePassword(currentPassword: old_password_text.text!, newPassword: new_password_text.text!, confirmPassword: confirm_password_text.text!)
     }
     
+    /// Método para cambiar la contraseña por una nueva
+    ///
+    /// - Parameters:
+    ///   - currentPassword: password inicial
+    ///   - newPassword: password nueva
+    ///   - confirmPassword: confirmación de la contraseña nueva
     func restorePassword(currentPassword: String, newPassword: String, confirmPassword: String) {
         
         let url = URL(string: "http://localhost:8888/BienestarDigital/public/index.php/api/editPassword")

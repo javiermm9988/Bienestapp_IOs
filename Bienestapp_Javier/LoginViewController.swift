@@ -15,6 +15,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password_login_text: UITextField!
     
 
+    /// Función al pulsar el botón de login y hacer su funcionalidad
+    ///
+    /// - Parameter sender: <#sender description#>
     @IBAction func login_button(_ sender: Any) {
         if email_login_text.text?.isEmpty ?? true || password_login_text.text?.isEmpty ?? true
         {
@@ -24,6 +27,11 @@ class LoginViewController: UIViewController {
         }
     }
     
+    /// Función que llama al metodo de la api que se encarga de hacer login
+    ///
+    /// - Parameters:
+    ///   - email: email del login
+    ///   - password: password del login
     func LoginUser(email: String, password: String) {
         
         let url = URL(string: "http://localhost:8888/BienestarDigital/public/index.php/api/Login")
